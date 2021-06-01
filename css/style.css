@@ -65,9 +65,67 @@ main {
   width: 30%;
 }
 
+#player,
 #player iframe {
   height: 500px;
   width: 100%;
+}
+
+#player {
+  background-position: center;
+  background-size: cover;
+  background-image: url('../img/nature.jpg');
+  position: relative;
+}
+
+#player .controls {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-top: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+#player .controls .progress-bar {
+  height: 5px;
+  background-color: #dedede;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+}
+#player .controls .progress-bar .value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background-color: red;
+  border-radius: 0 5px 5px 0;
+}
+
+#player .controls .progress-bar:hover {
+  box-shadow: 0 0 10px rgba(184, 62, 62, 0.5);
+}
+
+#player .controls .progress-bar:hover .value .marker {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateY(-50%);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fas.fa-play {
+  padding-left: 20px;
+  font-size: 24px;
 }
 
 .related-column .related-video-item {
