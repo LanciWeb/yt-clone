@@ -96,3 +96,10 @@ main {
 .video-details address {
   margin-bottom: 5px;
 }
+
+.video-thumbnail {
+  cursor: pointer;
+}
+.video-thumbnail:hover {
+  filter: grayscale(0.4);
+}
