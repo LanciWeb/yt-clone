@@ -8,7 +8,7 @@ for (var i = 0; i < thumbnails.length; i++) {
 
 function setVideo() {
   console.log(this);
-  var videoSrc = this.getAttribute('data-src');
+  var videoSrc = this.dataset.src;
   console.log(videoSrc);
   player.setAttribute('src', videoSrc);
 }
